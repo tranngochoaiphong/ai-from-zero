@@ -133,6 +133,15 @@ Phần này là thực hành. Làm xong là bạn đã cài Ollama và đang cha
 2. Tải file cài cho Windows (`OllamaSetup.exe`) rồi chạy nó.
 3. Cài xong, Ollama chạy ngầm trong máy. Mở **PowerShell** (hoặc Command Prompt) để gõ lệnh.
 
+Nếu bạn mới dùng Windows và chưa biết mở PowerShell hoặc Command Prompt:
+
+1. Nhấn phím **Windows** trên bàn phím, hoặc bấm nút **Start** ở góc dưới màn hình.
+2. Gõ `PowerShell` rồi nhấn **Enter** để mở PowerShell.
+3. Nếu muốn dùng Command Prompt, gõ `cmd` rồi nhấn **Enter**.
+4. Khi cửa sổ màu đen hoặc xanh hiện ra, bạn có thể gõ các lệnh như `ollama --version`.
+
+![Mở PowerShell hoặc Command Prompt trên Windows](../images/0101.png)
+
 **Mac**
 1. Vào https://ollama.com/download
 2. Tải bản cho macOS, mở file `.zip`, kéo **Ollama** vào thư mục Applications.

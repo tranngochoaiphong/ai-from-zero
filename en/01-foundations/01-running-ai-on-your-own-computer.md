@@ -135,6 +135,15 @@ This section is hands-on. By the end you'll have Ollama installed and be chattin
 2. Download the Windows installer (`OllamaSetup.exe`) and run it.
 3. After it installs, Ollama runs quietly in the background. Open **PowerShell** (or Command Prompt) to type commands.
 
+If you are new to Windows and do not know how to open PowerShell or Command Prompt yet:
+
+1. Press the **Windows** key on your keyboard, or click the **Start** button in the lower-left corner.
+2. Type `PowerShell`, then press **Enter** to open PowerShell.
+3. If you want to use Command Prompt instead, type `cmd`, then press **Enter**.
+4. When the black or blue command window opens, you can type commands like `ollama --version`.
+
+![Open PowerShell or Command Prompt on Windows](../../images/0101.png)
+
 **Mac**
 1. Go to https://ollama.com/download
 2. Download the macOS version, open the `.zip`, and drag **Ollama** into your Applications folder.
