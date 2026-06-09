@@ -20,8 +20,8 @@
 
 Điều quan trọng cần nhớ ngay từ đầu: một AI hoàn chỉnh thật ra gồm **hai phần tách rời** ghép lại:
 
-- Phần "bộ não" → chính là **mô hình (model)**
-- Phần "máy chạy" bộ não đó → chính là **phần mềm**
+- Phần "bộ não": chính là **mô hình (model)**
+- Phần "máy chạy" bộ não đó: chính là **phần mềm**
 
 Hai phần này khác nhau. Đó là lý do bạn cần hiểu cả hai.
 
@@ -248,23 +248,23 @@ Dưới đây là bốn nhóm máy phổ biến. Tìm nhóm gần với máy b�
 
 Laptop văn phòng, máy bàn đời cũ, máy chỉ có card tích hợp. Mọi thứ chạy bằng CPU, được nhưng chậm, nên giữ mô hình nhỏ.
 
-- Vùng ngon nhất: mô hình **1B đến 4B** → `gemma3:1b`, `gemma3:4b`, `llama3.2:3b`, `qwen3:4b`
-- Chạy được nhưng chậm: một mô hình **7B đến 8B** → `qwen3:8b`
+- Vùng ngon nhất: mô hình **1B đến 4B**, ví dụ `gemma3:1b`, `gemma3:4b`, `llama3.2:3b`, `qwen3:4b`
+- Chạy được nhưng chậm: một mô hình **7B đến 8B**, ví dụ `qwen3:8b`
 - Tránh: mọi thứ lớn hơn
 
 ### Nhóm 2: GPU phổ thông/tầm trung (khoảng 6 đến 8 GB VRAM)
 
 Nhiều laptop gaming và card bàn giá tốt (ví dụ dòng RTX 3050/3060).
 
-- Thoải mái: mô hình **7B đến 8B** → `qwen3:8b`, `llama3.1:8b`, `phi-4`
-- Có thể: lên tới khoảng **12B đến 14B** (bản nén) → `gemma3:12b`
+- Thoải mái: mô hình **7B đến 8B**, ví dụ `qwen3:8b`, `llama3.1:8b`, `phi-4`
+- Có thể: lên tới khoảng **12B đến 14B** (bản nén), ví dụ `gemma3:12b`
 
 ### Nhóm 3: GPU cao cấp (khoảng 16 đến 24 GB VRAM)
 
 Card bàn cho dân chơi (ví dụ dòng RTX 3090/4090).
 
-- Thoải mái: mô hình **27B đến 32B** → `gemma3:27b`, `qwen2.5-coder:32b`
-- Được nhưng chậm hơn: mô hình **70B** ở mức Q4 → `llama3.3:70b`
+- Thoải mái: mô hình **27B đến 32B**, ví dụ `gemma3:27b`, `qwen2.5-coder:32b`
+- Được nhưng chậm hơn: mô hình **70B** ở mức Q4, ví dụ `llama3.3:70b`
 
 ### Nhóm 4: Mac chip Apple Silicon (dòng M, bộ nhớ hợp nhất)
 
@@ -288,8 +288,8 @@ Một ví dụ thực tế cho người mới: cài **và chạy** đồng thờ
 
 Cài chỉ là tải file về ổ, mà hai cái này đều nhỏ:
 
-- `gemma3:270m` → khoảng 290 MB
-- `gemma3:4b` → khoảng 3,3 GB
+- `gemma3:270m`: khoảng 290 MB
+- `gemma3:4b`: khoảng 3,3 GB
 
 Tải bằng:
 
