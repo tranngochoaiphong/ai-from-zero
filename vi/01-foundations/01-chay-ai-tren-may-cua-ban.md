@@ -272,7 +272,7 @@ Trên các máy Mac này, CPU và GPU **dùng chung bộ nhớ**, nên tổng RA
 
 - 16 GB RAM: thoải mái với mô hình **7B đến 14B**
 - 32 GB trở lên: chạy được mô hình **27B đến 70B**
-- Mẹo: runtime **Apple MLX** là lựa chọn nhanh nhất trên các chip này, dù Ollama vẫn chạy tốt.
+- Mẹo: **Apple MLX** thường là lựa chọn nhanh nhất trên các chip này, dù Ollama vẫn chạy tốt.
 
 ### Quy tắc chung
 

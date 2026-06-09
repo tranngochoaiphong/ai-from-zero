@@ -4,7 +4,7 @@
 
 1. [What is an LLM?](#1-what-is-an-llm)
 2. [The Two Parts: Software vs. Model](#2-the-two-parts-software-vs-model)
-3. [Local LLM Software (the "player")](#3-local-llm-software-the-player)
+3. [Local LLM Software](#3-local-llm-software)
 4. [Open-Source Models (the "content")](#4-open-source-models-the-content)
 5. [Getting Started: Install Ollama and Run Your First Model](#5-getting-started-install-ollama-and-run-your-first-model)
 6. [How Many Models Can You Install / Run at Once?](#6-how-many-models-can-you-install--run-at-once)
@@ -22,8 +22,8 @@ It is the "AI brain" that can read and write text — the same kind of thing beh
 
 The key idea to remember from the very start: a working AI is actually **two separate pieces** joined together:
 
-- **The "brain"** -> the **model**
-- **The "player"** that runs the brain -> the **software**
+- **The "brain"**: the **model**
+- **The app that runs the brain**: the **software**
 
 These two are separate things. That's why you need to understand both.
 
@@ -31,25 +31,25 @@ These two are separate things. That's why you need to understand both.
 
 ## 2. The Two Parts: Software vs. Model
 
-The easiest analogy is a **music player**:
+The easiest analogy is **music software** like Windows Media Player on Windows or Music on macOS:
 
 | Music world | AI world |
 |---|---|
-| **Music player app** (media player, etc.) | **LLM software** (Ollama, LM Studio...) |
+| **Music software** (music app, etc.) | **LLM software** (Ollama, LM Studio...) |
 | **Song file** (`.mp3`) | **AI model** (Gemma, Llama...) |
 
 The core principle:
 
-> **Software** is the *player*. **The model** is the *content* you play.
+> **Software** is like the *music app*. **The model** is like the *song file* it opens.
 
-- One music player can play many different songs.
+- One music app can play many different songs.
 - Likewise, **one piece of software like Ollama can run many different models** — run Gemma today, switch to Qwen tomorrow, your choice.
 
-You need **both** to do anything. A player with no songs plays nothing; a song file with no player won't open.
+You need **both** to do anything. A music app with no songs plays nothing; a song file with no music app will not open.
 
 ---
 
-## 3. Local LLM Software (the "player")
+## 3. Local LLM Software
 
 ### What does "local" mean?
 
@@ -90,7 +90,7 @@ These are the ones a beginner is most likely to meet. Pick one to start; they al
 
 ### "Model" — recap
 
-The model is the **"AI brain"** — the part that actually thinks and answers. In the analogy, it's the **song file** the player runs.
+The model is the **"AI brain"** — the part that actually thinks and answers. In the analogy, it is the **song file** the music app opens.
 
 ### What does "open-source" mean?
 
@@ -115,8 +115,8 @@ The opposite is a **closed** model like OpenAI's GPT or Anthropic's Claude — y
 
 You'll see names like `gemma3:1b`, `gemma3:4b`, `qwen3:8b`. The **"B"** means *billion* — the **number of parameters**, i.e. roughly **"how big the brain is"**:
 
-- **Bigger number** -> smarter, but needs a **more powerful machine** and runs slower.
-- **Smaller number** -> a bit "dumber," but **light and fast** on weak machines.
+- **Bigger number**: smarter, but needs a **more powerful machine** and runs slower.
+- **Smaller number**: a bit "dumber," but **light and fast** on weak machines.
 
 Example: `4b` means the model has 4 billion parameters.
 
@@ -252,23 +252,23 @@ Below are four common machine categories. Find the one closest to yours.
 
 Office laptops, older desktops, and machines with only integrated graphics. Everything runs on the CPU, which works but is slow, so stay small.
 
-- Sweet spot: **1B to 4B** models -> `gemma3:1b`, `gemma3:4b`, `llama3.2:3b`, `qwen3:4b`
-- Possible but slow: a single **7B to 8B** model -> `qwen3:8b`
+- Sweet spot: **1B to 4B** models, for example `gemma3:1b`, `gemma3:4b`, `llama3.2:3b`, `qwen3:4b`
+- Possible but slow: a single **7B to 8B** model, for example `qwen3:8b`
 - Avoid: anything larger
 
 ### Type 2: Entry or mid-range GPU (about 6 to 8 GB VRAM)
 
 Many gaming laptops and budget desktop cards (for example an RTX 3050/3060 class GPU).
 
-- Comfortable: **7B to 8B** models -> `qwen3:8b`, `llama3.1:8b`, `phi-4`
-- Possible: up to about **12B to 14B** quantized -> `gemma3:12b`
+- Comfortable: **7B to 8B** models, for example `qwen3:8b`, `llama3.1:8b`, `phi-4`
+- Possible: up to about **12B to 14B** quantized, for example `gemma3:12b`
 
 ### Type 3: High-end GPU (about 16 to 24 GB VRAM)
 
 Enthusiast desktop cards (for example an RTX 3090/4090 class GPU).
 
-- Comfortable: **27B to 32B** models -> `gemma3:27b`, `qwen2.5-coder:32b`
-- Possible but slower: a **70B** model at Q4 -> `llama3.3:70b`
+- Comfortable: **27B to 32B** models, for example `gemma3:27b`, `qwen2.5-coder:32b`
+- Possible but slower: a **70B** model at Q4, for example `llama3.3:70b`
 
 ### Type 4: Apple Silicon Mac (M-series, unified memory)
 
@@ -276,7 +276,7 @@ On these Macs the CPU and GPU **share the same memory**, so your total RAM is wh
 
 - 16 GB RAM: comfortable with **7B to 14B** models
 - 32 GB or more: can handle **27B to 70B** models
-- Tip: the **Apple MLX** runtime is the fastest option on these chips, though Ollama works well too
+- Tip: **Apple MLX** is usually the fastest option on these chips, though Ollama works well too
 
 ### General rule of thumb
 
@@ -292,8 +292,8 @@ A practical example: installing **and running** both `gemma3:270m` (the tiny nan
 
 Installing just downloads files to disk, and these two are tiny:
 
-- `gemma3:270m` -> ~290 MB
-- `gemma3:4b` -> ~3.3 GB
+- `gemma3:270m`: ~290 MB
+- `gemma3:4b`: ~3.3 GB
 
 Download them with:
 
@@ -351,7 +351,7 @@ You can keep two terminal windows open, one per model, and they'll coexist in me
 |---|---|---|
 | **What is it?** | The tool that runs the AI | The AI brain itself |
 | **Examples** | Ollama, LM Studio, Jan, GPT4All | Gemma, Llama, Qwen, Phi |
-| **Analogy** | Music player | Song file |
+| **Analogy** | Music app | Song file |
 | **How many to install?** | Just one is enough | Download as many as you like |
 | **Decides what?** | How you interact (CLI vs GUI) | How smart the AI is |
 
@@ -377,4 +377,4 @@ You can keep two terminal windows open, one per model, and they'll coexist in me
 
 ### One-sentence summary
 
-> **Software** (like Ollama) is the *player*; an **open-source model** (like Gemma) is the *content*. Install the software once, then download as many models as you like to run AI right on your own machine — private, free, and offline. Downloading is unlimited; running several at once is what your memory limits.
+> **Software** (like Ollama) is like the *music app*; an **open-source model** (like Gemma) is like the *content* it opens. Install the software once, then download as many models as you like to run AI right on your own machine — private, free, and offline. Downloading is unlimited; running several at once is what your memory limits.
