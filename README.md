@@ -4,8 +4,8 @@ A hands-on journey learning AI from zero, written in two languages.
 
 **Choose your language / Chọn ngôn ngữ:**
 
-* [English](./en/README.md) — the full guide in English (portfolio version)
-* [Tiếng Việt](./vi/README.md) — bản đầy đủ bằng tiếng Việt (cho cộng đồng)
+* [English](./en/README.md) — the full guide in English
+* [Tiếng Việt](./vi/README.md) — bản đầy đủ bằng tiếng Việt
 
 ---
 
