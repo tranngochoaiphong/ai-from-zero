@@ -84,7 +84,7 @@ Nó lo hết phần kỹ thuật phức tạp:
 
 ---
 
-## 4. Mô hình mã nguồn mở
+## 4. Mô hình mã nguồn mở (open-source model)
 
 ### Nhắc lại "model"
 
@@ -96,7 +96,7 @@ Model là **"bộ não AI"**, phần thật sự suy nghĩ và trả lời. Tron
 
 Ngược lại là mô hình **đóng (closed)** như GPT của OpenAI hay Claude của Anthropic: bạn chỉ dùng được qua dịch vụ của họ, **không tải về máy được**.
 
-> Nói gọn: **muốn chạy AI local trên máy mình, bạn bắt buộc phải dùng open-source model**, vì mô hình đóng không cho tải về.
+> **Muốn chạy AI local trên máy mình, bạn bắt buộc phải dùng open-source model**, vì mô hình đóng không cho tải về.
 
 ### Vài open-source model nổi tiếng
 
@@ -111,10 +111,10 @@ Ngược lại là mô hình **đóng (closed)** như GPT của OpenAI hay Claud
 
 ### Một mô hình có nhiều "sizes"
 
-Bạn sẽ thấy tên kiểu `gemma3:1b`, `gemma3:4b`, `qwen3:8b`. Chữ **"B"** là viết tắt của *billion* (tỉ), tức **số tham số (parameters)**, hiểu nôm na là **"bộ não lớn cỡ nào"**:
+Bạn sẽ thấy tên kiểu `gemma3:1b`, `gemma3:4b`, `qwen3:8b`. Chữ **"b"** là viết tắt của *billion* (tỉ), tức **số tham số (parameters)**, hiểu nôm na là **"bộ não lớn cỡ nào"**:
 
-- Số càng lớn → thông minh hơn, nhưng cần máy mạnh hơn và chạy chậm hơn.
-- Số càng nhỏ → "kém thông minh" hơn chút, nhưng nhẹ và nhanh trên máy yếu.
+- Số càng lớn càng thông minh hơn, nhưng cần máy mạnh hơn và chạy chậm hơn.
+- Số càng nhỏ thì càng "kém thông minh" hơn chút, nhưng nhẹ và nhanh trên máy yếu.
 
 Ví dụ: `4b` nghĩa là mô hình có 4 tỉ tham số.
 
@@ -140,7 +140,7 @@ Nếu bạn mới dùng Windows và chưa biết mở PowerShell hoặc Command 
 3. Nếu muốn dùng Command Prompt, gõ `cmd` rồi nhấn **Enter**.
 4. Khi cửa sổ màu đen hoặc xanh hiện ra, bạn có thể gõ các lệnh như `ollama --version`.
 
-![Mở PowerShell hoặc Command Prompt trên Windows](../images/0101.png)
+![Mở PowerShell hoặc Command Prompt trên Windows](../../images/0101.png)
 
 **Mac**
 1. Vào https://ollama.com/download
@@ -210,7 +210,7 @@ Bạn cũng có thể hỏi một câu mà không cần vào chế độ chat:
 ollama run gemma3:270m "Giai thich LLM la gi trong mot cau."
 ```
 
-> Nhắc nhỏ: `gemma3:270m` rất nhỏ, nên hãy hỏi ngắn và đơn giản. Muốn câu trả lời tốt hơn, hãy cài một mô hình lớn hơn sau (xem mục 7) và chạy y hệt cách trên.
+> `gemma3:270m` rất nhỏ, nên hãy hỏi ngắn và đơn giản. Muốn câu trả lời tốt hơn, hãy cài một mô hình lớn hơn sau (xem mục 7) và chạy y hệt cách trên.
 
 ---
 

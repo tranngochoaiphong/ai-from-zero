@@ -4,17 +4,17 @@
 
 Một hành trình từ lúc chưa biết gì về AI đến khi tự làm được những sản phẩm thật. Mọi chủ đề viết bằng tiếng Việt cho ngưởi ngại đọc tiếng Anh, mỗi lần một bài, ghi lại những gì mình đang học.
 
-Đây là một cuốn nhật ký học tập. Mục tiêu đơn giản: đọc một bài, làm được ngay, rồi đi tiếp.
+Mục tiêu đơn giản: đọc từng bài, thực hành được ngay, rồi mới đi tiếp.
 
-> Ghi chú nhỏ: nhiều từ chuyên ngành mình giữ nguyên tiếng Anh (LLM, model, RAG, fine-tune, GPU...) vì bạn sẽ gặp lại chúng ở khắp nơi. Làm quen dần là ổn.
+> Ghi chú: nhiều từ chuyên ngành sẽ được giữ nguyên tiếng Anh (LLM, model, RAG, fine-tune, GPU...) vì bạn sẽ gặp lại chúng ở khắp nơi.
 
 ---
 
 ## Dành cho ai
 
-* Người mới với AI như mình và muốn một lộ trình rõ ràng thay vì hàng đống hướng dẫn rời rạc.
-* Có thể dùng được máy tính và terminal, nhưng không cần biết machine learning.
-* Học bằng cách làm, không chỉ đọc.
+* Người mới biết AI như mình và muốn một lộ trình rõ ràng thay vì những hướng dẫn rời rạc trên internet.
+* Có thể dùng được máy tính và terminal, không nhất thiết phải biết machine learning.
+* Học bằng cách thực hành, không chỉ đọc.
 
 Không cần kinh nghiệm AI trước đó. Mỗi giai đoạn chỉ giả định bạn đã qua giai đoạn trước.
 
@@ -33,7 +33,7 @@ Các bài được đánh số nên luôn đọc đúng thứ tự.
 
 ## Lộ trình
 
-| Giai đoạn | Thư mục | Sau khi học xong bạn làm được gì |
+| Phase | Folder | Sau khi học xong bạn làm được gì |
 |---|---|---|
 | 1. Nền tảng | `01-foundations/` | Chạy AI trên máy mình và hiểu LLM là gì |
 | 2. Dùng mô hình | `02-using-models/` | Trò chuyện hiệu quả và gọi mô hình bằng code |
@@ -54,7 +54,7 @@ Hướng dẫn chạy mô hình AI đầu tiên ngay trên máy, không cần t�
 
 ## Tiến độ
 
-Repo này lớn dần theo lúc mình học. Các giai đoạn và bài được thêm theo thời gian, nên một số phần có thể còn trống hoặc đang làm dở.
+Repo này sẽ phát triển theo lúc mình học. Các giai đoạn và bài được thêm theo thời gian, nên một số phần có thể còn trống hoặc đang dở dang.
 
 - [x] Giai đoạn 1: Nền tảng (đang làm)
 - [ ] Giai đoạn 2: Dùng mô hình
