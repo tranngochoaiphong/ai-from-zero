@@ -1,12 +1,10 @@
 # AI From Zero
 
-A hands-on journey learning AI from zero, written in two languages.
+A practical guide to learning AI from zero, written in English and Vietnamese.
 
-**Choose your language / Chọn ngôn ngữ:**
+Pick a language:
 
-* [English](./en/README.md) — the full guide in English
-* [Tiếng Việt](./vi/README.md) — bản đầy đủ bằng tiếng Việt
+* [English](./en/README.md), the full guide in English
+* [Tiếng Việt](./vi/README.md), bản đầy đủ bằng tiếng Việt
 
----
-
-This repo is a learning log: read one lesson, do it the same day, move on. The two language versions mirror each other, so pick whichever you prefer.
+This repo is a learning log. Read one lesson. Do the steps the same day. Move on. Both language versions cover the same content.
